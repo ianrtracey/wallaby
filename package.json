@@ -1,12 +1,26 @@
 {
   "name": "wallaby",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testing suite for mocking integration tests and local web application",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleygwilliams/my_package.git"
+  },
+  "author": {
+    "name": "Ian Tracey",
+    "email": "ianrtracey@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash.flatten": "^4.4.3",
+    "express": "^4.16.3",
+    "lodash.flatten": "^4.4.0",
+    "parrot": "^0.3.1",
+    "parrot-middleware": "^3.1.0"
+  }
 }
