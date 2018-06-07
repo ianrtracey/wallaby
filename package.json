@@ -1,6 +1,6 @@
 {
   "name": "wallaby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Testing suite for mocking integration tests and local web application",
   "main": "index.js",
   "scripts": {
