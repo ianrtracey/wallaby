@@ -1,6 +1,6 @@
-import { buildScenario, registerService, overrideService, Services, Service } from './../lib/index';
+import { scenario, service } from './../lib/index';
 
-const productService = registerService({
+const productService = service({
   getAllProducts: {
     method: 'GET',
     url: '/products',
@@ -16,10 +16,41 @@ const productService = registerService({
   }
 })
 
-const services: Services = {
+const services = {
   productService,
 }
 
+export const scenarios = scenarios(services, () => {
+  scenario('product service is down', () => {
+    services.productService
+      .overrideService
+      .respondWith({
+        status: 500,
+      })
+  })
+
+  scenario('no products', () => {
+    services.productServicepre
+      .overrideService
+      .withEndpoint('with ')
+      .respondWith({
+        status: 200,
+        body: [],
+      })
+  })
+})
+  scenario('default scenario is down', services),
+  scenario('product service is down', {
+    ...services,
+
+  })
+
+  })
+]
+
+export const scenarios = {
+
+}
 
 
 export const scenarios = {
@@ -35,9 +66,3 @@ export const scenarios = {
       })
   })
 }
-
-export const scenarios = [
-  new Scenario({
-    ''
-  })
-]
