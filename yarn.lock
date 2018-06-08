@@ -480,3 +480,13 @@ utils-merge@1.0.1:
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+
+wallaby@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/wallaby/-/wallaby-1.0.1.tgz#5032c233a64a91809df61101ec92254475f12ed3"
+  dependencies:
+    "@types/lodash.flatten" "^4.4.3"
+    express "^4.16.3"
+    lodash.flatten "^4.4.0"
+    parrot "^0.3.1"
+    parrot-middleware "^3.1.0"

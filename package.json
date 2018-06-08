@@ -21,6 +21,7 @@
     "express": "^4.16.3",
     "lodash.flatten": "^4.4.0",
     "parrot": "^0.3.1",
-    "parrot-middleware": "^3.1.0"
+    "parrot-middleware": "^3.1.0",
+    "wallaby": "^1.0.1"
   }
 }
