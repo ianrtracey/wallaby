@@ -1,1 +1,2 @@
 # Wallaby
+![logo]('./logo.png')
