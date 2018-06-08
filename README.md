@@ -1,2 +1,3 @@
 # Wallaby
-![logo]('./logo.png')
+# A toolset for scenario mocking and testing
+![logo]('logo.png')
